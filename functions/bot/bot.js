@@ -10,9 +10,9 @@ bot.start(ctx => {
       {
         reply_markup: {
           keyboard: [
-            ["🔹 Cum pot gestiona stresul?", "🔹 Mă simt anxios, ce pot face?"],
-            ["🔹 Unde pot găsi sprijin psihologic?", "🔹 Am nevoie de tehnici de relaxare"],
-            ["🔹 Vreau să vorbesc cu un consilier", "🔹 Este urgent, am nevoie de ajutor imediat!"]
+            ["Cum pot gestiona stresul?", "Mă simt anxios, ce pot face?"],
+            ["Unde pot găsi sprijin psihologic?", "Am nevoie de tehnici de relaxare"],
+            ["Vreau să vorbesc cu un consilier", "Este urgent, am nevoie de ajutor imediat!"]
           ],
           resize_keyboard: true,
         }
@@ -25,7 +25,7 @@ bot.start(ctx => {
 });
 
 // 1. Stress management
-bot.hears("🔹 Cum pot gestiona stresul?", async (ctx) => {
+bot.hears("Cum pot gestiona stresul?", async (ctx) => {
   try {
     await ctx.reply(
       "💬 Stresul este normal, dar poate fi gestionat. Ai încercat tehnici de respirație sau planificare eficientă a timpului? Dacă vrei, îți pot oferi un exercițiu ghidat.\n\nAi dori să încercăm?",
@@ -45,7 +45,7 @@ bot.hears("🔹 Cum pot gestiona stresul?", async (ctx) => {
 });
 
 // 2. Anxiety management
-bot.hears("🔹 Mă simt anxios, ce pot face?", async (ctx) => {
+bot.hears("Mă simt anxios, ce pot face?", async (ctx) => {
   try {
     await ctx.reply(
       "💬 Anxietatea poate fi copleșitoare, dar nu ești singur. Încearcă să îți observi respirația și să îți aduci atenția asupra prezentului. Vrei să facem un exercițiu împreună?\n\nAi dori să încercăm?",
@@ -65,7 +65,7 @@ bot.hears("🔹 Mă simt anxios, ce pot face?", async (ctx) => {
 });
 
 // 3. Psychological support
-bot.hears("🔹 Unde pot găsi sprijin psihologic?", async (ctx) => {
+bot.hears("Unde pot găsi sprijin psihologic?", async (ctx) => {
   try {
     await ctx.reply(
       "💬 Dacă ai nevoie de ajutor profesional, poți contacta serviciul de suport universitar la 📞 0 800 800 22 De asemenea, îți pot sugera resurse online."
@@ -81,7 +81,7 @@ bot.hears("🔹 Unde pot găsi sprijin psihologic?", async (ctx) => {
 });
 
 // 4. Relaxation techniques
-bot.hears("🔹 Am nevoie de tehnici de relaxare", async (ctx) => {
+bot.hears("Am nevoie de tehnici de relaxare", async (ctx) => {
   try {
     await ctx.reply(
       "💬 Sigur! Îți pot recomanda:\n • O sesiune de respirație profundă 🧘\n • Un exercițiu de meditație ghidată 🎧\n • O tehnică de relaxare progresivă 💆‍♂️\n\nCare dintre acestea ți se pare potrivită?",
@@ -102,7 +102,7 @@ bot.hears("🔹 Am nevoie de tehnici de relaxare", async (ctx) => {
 });
 
 // 5. Talk to a counselor
-bot.hears("🔹 Vreau să vorbesc cu un consilier", async (ctx) => {
+bot.hears("Vreau să vorbesc cu un consilier", async (ctx) => {
   try {
     await ctx.reply(
       "💬 Este important să ai sprijin. Poți programa o întâlnire cu un consilier la centru gratuit neovita, consultată gratuită pentru tinerii de 10-24 de ani 📆 https://programare.yk.md"
@@ -118,7 +118,7 @@ bot.hears("🔹 Vreau să vorbesc cu un consilier", async (ctx) => {
 });
 
 // 6. Urgent help
-bot.hears("🔹 Este urgent, am nevoie de ajutor imediat!", async (ctx) => {
+bot.hears("Este urgent, am nevoie de ajutor imediat!", async (ctx) => {
   try {
     await ctx.reply(
       "💬 Dacă ai nevoie de ajutor urgent, te rog sună la 112 sau la linia de suport psihologic: 📞 +373 8008 8008 (gratuit, non-stop). Nu ești singur, ajutorul este disponibil."
@@ -203,9 +203,9 @@ function showMainMenuMarkup() {
   return {
     reply_markup: {
       keyboard: [
-        ["🔹 Cum pot gestiona stresul?", "🔹 Mă simt anxios, ce pot face?"],
-        ["🔹 Unde pot găsi sprijin psihologic?", "🔹 Am nevoie de tehnici de relaxare"],
-        ["🔹 Vreau să vorbesc cu un consilier", "🔹 Este urgent, am nevoie de ajutor imediat!"]
+        ["Cum pot gestiona stresul?", "Mă simt anxios, ce pot face?"],
+        ["Unde pot găsi sprijin psihologic?", "Am nevoie de tehnici de relaxare"],
+        ["Vreau să vorbesc cu un consilier", "Este urgent, am nevoie de ajutor imediat!"]
       ],
       resize_keyboard: true,
     }
