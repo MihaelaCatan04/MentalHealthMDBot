@@ -70,9 +70,7 @@ bot.hears("Unde pot găsi sprijin psihologic?", async (ctx) => {
     await ctx.reply(
       "💬 Dacă ai nevoie de ajutor profesional, poți contacta serviciul de suport universitar la 📞 0 800 800 22 De asemenea, îți pot sugera resurse online."
     );
-    setTimeout(() => {
-      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-    }, 100);
+    ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
   } catch (error) {
     console.log("Error:", error);
     ctx.reply("A apărut o eroare");
@@ -106,9 +104,7 @@ bot.hears("Vreau să vorbesc cu un consilier", async (ctx) => {
     await ctx.reply(
       "💬 Este important să ai sprijin. Poți programa o întâlnire cu un consilier la centru gratuit neovita, consultată gratuită pentru tinerii de 10-24 de ani 📆 https://programare.yk.md"
     );
-    setTimeout(() => {
-      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-    }, 100);
+    ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
   } catch (error) {
     console.log("Error:", error);
     ctx.reply("A apărut o eroare");
@@ -121,9 +117,7 @@ bot.hears("Este urgent, am nevoie de ajutor imediat!", async (ctx) => {
     await ctx.reply(
       "💬 Dacă ai nevoie de ajutor urgent, te rog sună la 112 sau la linia de suport psihologic: 📞 +373 8008 8008 (gratuit, non-stop). Nu ești singur, ajutorul este disponibil."
     );
-    setTimeout(() => {
-      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-    }, 100);
+    ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
   } catch (error) {
     console.log("Error:", error);
     ctx.reply("A apărut o eroare");
@@ -141,10 +135,7 @@ bot.on('callback_query', async (ctx) => {
     // Stress management responses
     if (callbackData === "stres_da") {
       await ctx.reply("Haide să încercăm, accesează linkul\nhttps://youtu.be/YsHAbhYJUBQ?si=fFHBHzf8NrKwvASQ");
-      
-      setTimeout(() => {
-        ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-      }, 100);
+      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
     } 
     else if (callbackData === "stres_nu") {
       ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
@@ -153,10 +144,7 @@ bot.on('callback_query', async (ctx) => {
     // Anxiety management responses
     else if (callbackData === "anxietate_da") {
       await ctx.reply("Haide să încercăm, accesează linkul\nhttps://youtu.be/5PrGJxXn21g?si=-_6H-yQuR68mzyZJ");
-      
-      setTimeout(() => {
-        ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-      }, 100);
+      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
     }
     else if (callbackData === "anxietate_nu") {
       ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
@@ -165,24 +153,15 @@ bot.on('callback_query', async (ctx) => {
     // Relaxation techniques responses
     else if (callbackData === "relaxare_respiratie") {
       await ctx.reply("La sesiune de respirație: https://youtu.be/LiUnFJ8P4gM?si=hZQEq6vBplKVvfeX");
-      
-      setTimeout(() => {
-        ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-      }, 100);
+      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
     }
     else if (callbackData === "relaxare_meditatie") {
       await ctx.reply("Un exercițiu de meditație ghidată: https://youtu.be/_twPuLbqzLM?si=vOU7KsUIyqfqlRuM");
-      
-      setTimeout(() => {
-        ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-      }, 100);
+      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
     }
     else if (callbackData === "relaxare_progresiva") {
       await ctx.reply("O tehnică de relaxare progresivă: https://youtu.be/yRfGqpYloKY?si=x3Bnqiq6prKu1TzV");
-      
-      setTimeout(() => {
-        ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
-      }, 100);
+      ctx.reply("✨ Îngrijește-te și ai încredere în tine! 💙", showMainMenuMarkup());
     }
   } catch (error) {
     console.log("Error in callback_query:", error);
