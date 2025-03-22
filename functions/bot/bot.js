@@ -11,6 +11,15 @@ bot.start(ctx => {
   }
 })
 
+bot.command('thumbsup', async (ctx) => {
+    try {
+        ctx.reply('Here you go 👍!')
+    } catch (error) {
+        console.log('error', error)
+        ctx.reply('error sending image')
+    }
+})
+
 exports.handler = async event => {
   try {
     await bot.handleUpdate(JSON.parse(event.body))
